@@ -10,7 +10,7 @@
         <h1>Processing project by Luigi Sanna</h1>
         <script type="text/processing">
 
-//Programma di un orologio
+//Programma di un orologio, realizzato da Luigi Sanna
 
 //Sfondo e proprietà
 void setup() {
@@ -34,13 +34,13 @@ void setup() {
    pop();
 
    // Variabili temporali
-   int secondi = second();
-   int minuti = minute();
-   int ore = hour();
+   int secondi =  1 //second();
+   int minuti = 1 //minute();
+   int ore = 1 //hour();
 
    //Lancetta dei secondi
    push();
-   rotate(radians(frameRate * 6));
+   rotate(radians(secondi * 6));
    stroke(#409CFF);
    strokeWeight(3);
    line(0, 0, 100, 0);
@@ -48,7 +48,7 @@ void setup() {
 
    //Lancetta dei minuti
    push();
-   rotate(radians(frameRate * 6));
+   rotate(radians(minuti * 6));
    stroke(#3075BF);
    strokeWeight(5);
    line(0, 0, 75, 0);
@@ -56,7 +56,7 @@ void setup() {
 
    //Lancetta delle ore
    push();
-   rotate(radians(frameRate * 30));
+   rotate(radians(ore * 30));
    stroke(#204E80);
    strokeWeight(8);
    line(0, 0, 50, 0);
