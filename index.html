@@ -39,14 +39,14 @@ void setup() {
    int minuti = minute();
    int ore = hour();
 
-   //Lancetta dei secondi
+   //Lancetta delle ore
    push();
-   rotate(radians(secondi * 6));
-   stroke(#409CFF);
-   strokeWeight(3);
-   line(0, 0, 100, 0);
+   rotate(radians(ore * 30));
+   stroke(#204E80);
+   strokeWeight(8);
+   line(0, 0, 50, 0);
    pop();
-
+   
    //Lancetta dei minuti
    push();
    rotate(radians(minuti * 6));
@@ -55,12 +55,12 @@ void setup() {
    line(0, 0, 75, 0);
    pop();
 
-   //Lancetta delle ore
+   //Lancetta dei secondi
    push();
-   rotate(radians(ore * 30));
-   stroke(#204E80);
-   strokeWeight(8);
-   line(0, 0, 50, 0);
+   rotate(radians(secondi * 6));
+   stroke(#409CFF);
+   strokeWeight(3);
+   line(0, 0, 100, 0);
    pop();
 
    //Fulcro delle lancette
