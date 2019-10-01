@@ -27,10 +27,12 @@ void setup() {
    rotate(radians(-90));
    
    //Quadrante
+   pushMatrix();
    stroke(#D92416);
    fill(#EBC469);
    strokeWeight(3);
    ellipse(0, 0, 250, 250);
+   popMatrix();
 
    // Variabili temporali
    int secondi = second();
@@ -46,21 +48,27 @@ void setup() {
    popMatrix();
    
    //Lancetta dei minuti
+   pushMatrix();
    rotate(radians(minuti * 6));
    stroke(#3075BF);
    strokeWeight(5);
    line(0, 0, 75, 0);
+   popMatrix();
    
    //Lancetta dei secondi
+   pushMatrix();
    rotate(radians(secondi * 6));
    stroke(#409CFF);
    strokeWeight(3);
    line(0, 0, 100, 0);
+   popMatrix();
    
    //Fulcro delle lancette
+   pushMatrix();
    stroke(#D92416);
    strokeWeight(10);
    point(0, 0);
+   popMatrix();
    popMatrix();
    };
             
